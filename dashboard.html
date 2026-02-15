@@ -1,16 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doomscroll doctor · dashboard</title>
     <link rel="stylesheet" href="dashboard.css" />
-  </head>
-  <body>
-    <div class="wrap">
-      <h1>Doom Scroll Doctor</h1>
-      <p>This is the fullscreen dashboard view.</p>
-      <button id="back">Back</button>
-    </div>
+</head>
+<body>
+    <div class="app">
+        <main class="main">
+            <div class="top-bar">
+                <h1>dashboard</h1>
+                <div class="date" id="currentDate">feb 14, 2025</div>
+            </div>
 
-    <script src="dashboard.js"></script>
-  </body>
+            <div class="content">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>current session</h2>
+                        <span class="badge">live</span>
+                    </div>
+
+                    <div class="session">
+                        <div class="session-icon">W</div>
+                        <div class="session-info">
+                            <div class="session-domain">youtube.com</div>
+                            <div class="session-url">https://www.youtube.com/watch</div>
+                        </div>
+                        <div class="session-time">12:34</div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn btn-primary">track site</button>
+                        <button class="btn btn-secondary">take break</button>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">sites today</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">47m</span>
+                        <span class="stat-label">total time</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">breaks</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">watching</span>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="col">
+                        <div class="card">
+                            <h2>recent activity</h2>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <span>reddit.com</span>
+                                    <span>2m ago</span>
+                                </div>
+                                <div class="activity-item">
+                                    <span>twitter.com</span>
+                                    <span>15m ago</span>
+                                </div>
+                                <div class="activity-item">
+                                    <span>github.com</span>
+                                    <span>34m ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <h2>quick actions</h2>
+                            <div class="quick-grid">
+                                <button class="quick-btn">
+                                    <span>G</span>
+                                    <span>game</span>
+                                </button>
+                                <button class="quick-btn">
+                                    <span>C</span>
+                                    <span>cards</span>
+                                </button>
+                                <button class="quick-btn">
+                                    <span>V</span>
+                                    <span>video</span>
+                                </button>
+                                <button class="quick-btn">
+                                    <span>P</span>
+                                    <span>plan</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h2>watchlist</h2>
+                            <div class="watchlist">
+                                <div class="watch-item">
+                                    <span>youtube.com</span>
+                                    <span class="watch-dot">●</span>
+                                </div>
+                                <div class="watch-item">
+                                    <span>reddit.com</span>
+                                    <span class="watch-dot">●</span>
+                                </div>
+                                <div class="watch-item">
+                                    <span>twitter.com</span>
+                                    <span class="watch-dot">○</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
 </html>
