@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alarm · doomscroll doctor</title>
+    <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">D</div>
+                <div class="logo-text">doomscroll doctor</div>
+            </div>
+            <nav class="nav">
+                <a href="dashboard.html" class="nav-item">D dashboard</a>
+                <a href="focus.html" class="nav-item">F focus</a>
+                <a href="funfacts.html" class="nav-item">U facts</a>
+                <a href="motivate.html" class="nav-item">M motivate</a>
+                <a href="alarm.html" class="nav-item active">A alarm</a>
+                <a href="calendar.html" class="nav-item">C calendar</a>
+                <a href="flashcards.html" class="nav-item">R cards</a>
+                <a href="settings.html" class="nav-item">P settings</a>
+            </nav>
+            <div class="user">
+                <span class="user-dot"></span>
+                <span class="user-text">active</span>
+            </div>
+        </div>
+        <main class="main">
+            <div class="top-bar">
+                <h1>alarm</h1>
+                <div class="date">feb 14, 2025</div>
+            </div>
+            <div class="content">
+                <div class="card alarm-card">
+                    <div class="time-setter">
+                        <input type="time" class="time-input" value="14:30">
+                    </div>
+                    <div class="alarm-controls">
+                        <button class="btn btn-primary">set alarm</button>
+                        <button class="btn btn-secondary">snooze</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>ringtone</h2>
+                    <div class="ringtone-list">
+                        <label class="ringtone-option">
+                            <input type="radio" name="ringtone" checked>
+                            <span>gentle chime</span>
+                        </label>
+                        <label class="ringtone-option">
+                            <input type="radio" name="ringtone">
+                            <span>classic bell</span>
+                        </label>
+                        <label class="ringtone-option">
+                            <input type="radio" name="ringtone">
+                            <span>digital buzz</span>
+                        </label>
+                        <label class="ringtone-option">
+                            <input type="radio" name="ringtone">
+                            <span>nature sounds</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">alarms today</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">missed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">completed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">85%</span>
+                        <span class="stat-label">success</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>upcoming</h2>
+                    <div class="alarm-list">
+                        <div class="alarm-item">
+                            <span>break time</span>
+                            <span>14:30</span>
+                        </div>
+                        <div class="alarm-item">
+                            <span>focus session</span>
+                            <span>15:00</span>
+                        </div>
+                        <div class="alarm-item">
+                            <span>evening walk</span>
+                            <span>17:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

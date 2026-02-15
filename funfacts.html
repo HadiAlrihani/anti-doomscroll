@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun facts · doomscroll doctor</title>
+    <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">D</div>
+                <div class="logo-text">doomscroll doctor</div>
+            </div>
+            <nav class="nav">
+                <a href="dashboard.html" class="nav-item">D dashboard</a>
+                <a href="focus.html" class="nav-item">F focus</a>
+                <a href="funfacts.html" class="nav-item active">U fun facts</a>
+                <a href="motivate.html" class="nav-item">M motivate</a>
+                <a href="alarm.html" class="nav-item">A alarm</a>
+                <a href="calendar.html" class="nav-item">C calendar</a>
+                <a href="flashcards.html" class="nav-item">R cards</a>
+                <a href="settings.html" class="nav-item">P settings</a>
+            </nav>
+            <div class="user">
+                <span class="user-dot"></span>
+                <span class="user-text">active</span>
+            </div>
+        </div>
+        <main class="main">
+            <div class="top-bar">
+                <h1>fun facts</h1>
+                <div class="date">feb 14, 2025</div>
+            </div>
+            <div class="content">
+                <div class="card funfact-card">
+                    <div class="funfact-display" id="funFact">
+                        <p class="funfact-text">Honey never spoils. Archaeologists found 3000-year-old honey in Egyptian tombs that was still edible.</p>
+                    </div>
+                    <div class="funfact-controls">
+                        <button class="btn btn-primary" id="newFact">new fact</button>
+                        <button class="btn btn-secondary" id="shareFact">save fact</button>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number" id="factsToday">12</span>
+                        <span class="stat-label">seen today</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="factsSaved">8</span>
+                        <span class="stat-label">saved</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="factsLiked">5</span>
+                        <span class="stat-label">liked</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="streakDays">3</span>
+                        <span class="stat-label">day streak</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>categories</h2>
+                    <div class="category-grid">
+                        <button class="category-btn active">random</button>
+                        <button class="category-btn">science</button>
+                        <button class="category-btn">history</button>
+                        <button class="category-btn">animals</button>
+                        <button class="category-btn">space</button>
+                        <button class="category-btn">human body</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>recent facts</h2>
+                    <div class="fact-list">
+                        <div class="fact-item">
+                            <span class="fact-preview">Octopuses have three hearts...</span>
+                            <span class="fact-time">2m ago</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-preview">Bananas are berries, strawberries aren't...</span>
+                            <span class="fact-time">15m ago</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-preview">A day on Venus is longer than a year...</span>
+                            <span class="fact-time">34m ago</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-preview">Wombat poop is cube-shaped...</span>
+                            <span class="fact-time">1h ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>daily challenge</h2>
+                    <div class="challenge-box">
+                        <p class="challenge-text">learn 5 new facts today</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <span class="progress-label">3/5 completed</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="funfacts.js"></script>
+</body>
+</html>

@@ -8,7 +8,23 @@
 </head>
 <body>
     <div class="app">
-       
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">D</div>
+                <div class="logo-text">doomscroll doctor</div>
+            </div>
+            <nav class="nav">
+                <a href="dashboard.html" class="nav-item">D dashboard</a>
+                <a href="focus.html" class="nav-item active">F focus</a>
+                <a href="sites.html" class="nav-item">S sites</a>
+                <a href="stats.html" class="nav-item">T stats</a>
+                <a href="settings.html" class="nav-item">P settings</a>
+            </nav>
+            <div class="user">
+                <span class="user-dot"></span>
+                <span class="user-text">active</span>
+            </div>
+        </div>
         <main class="main">
             <div class="top-bar">
                 <h1>focus</h1>
@@ -23,24 +39,11 @@
                     </div>
                 </div>
                 <div class="stats-grid">
-                    <div class="stat-card">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">today</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">12</span>
-                        <span class="stat-label">week</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">47</span>
-                        <span class="stat-label">total</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">25m</span>
-                        <span class="stat-label">best</span>
-                    </div>
+                    <div class="stat-card"><span class="stat-number">3</span><span class="stat-label">today</span></div>
+                    <div class="stat-card"><span class="stat-number">12</span><span class="stat-label">week</span></div>
+                    <div class="stat-card"><span class="stat-number">47</span><span class="stat-label">total</span></div>
+                    <div class="stat-card"><span class="stat-number">25m</span><span class="stat-label">best</span></div>
                 </div>
-
                 <div class="card">
                     <h2>presets</h2>
                     <div class="preset-grid">
@@ -50,51 +53,24 @@
                         <button class="preset-btn">5 min</button>
                     </div>
                 </div>
-
-             
                 <div class="card">
                     <h2>recent</h2>
                     <div class="session-list">
-                        <div class="session-item">
-                            <span>today 2:30pm</span>
-                            <span>25 min</span>
-                        </div>
-                        <div class="session-item">
-                            <span>today 11:15am</span>
-                            <span>15 min</span>
-                        </div>
-                        <div class="session-item">
-                            <span>yesterday 4:20pm</span>
-                            <span>25 min</span>
-                        </div>
-                        <div class="session-item">
-                            <span>yesterday 10:05am</span>
-                            <span>10 min</span>
-                        </div>
+                        <div class="session-item"><span>today 2:30pm</span><span>25 min</span></div>
+                        <div class="session-item"><span>today 11:15am</span><span>15 min</span></div>
+                        <div class="session-item"><span>yesterday 4:20pm</span><span>25 min</span></div>
                     </div>
                 </div>
-
-                
                 <div class="card">
                     <h2>sound</h2>
                     <div class="sound-options">
-                        <label class="sound-option">
-                            <input type="radio" name="sound" checked>
-                            <span>bell</span>
-                        </label>
-                        <label class="sound-option">
-                            <input type="radio" name="sound">
-                            <span>chime</span>
-                        </label>
-                        <label class="sound-option">
-                            <input type="radio" name="sound">
-                            <span>none</span>
-                        </label>
+                        <label class="sound-option"><input type="radio" name="sound" checked><span>bell</span></label>
+                        <label class="sound-option"><input type="radio" name="sound"><span>chime</span></label>
+                        <label class="sound-option"><input type="radio" name="sound"><span>none</span></label>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-    <script src="focus.js"></script>
 </body>
 </html>

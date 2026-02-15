@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flashcards · doomscroll doctor</title>
+    <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">D</div>
+                <div class="logo-text">doomscroll doctor</div>
+            </div>
+            <nav class="nav">
+                <a href="dashboard.html" class="nav-item">D dashboard</a>
+                <a href="focus.html" class="nav-item">F focus</a>
+                <a href="funfacts.html" class="nav-item">U facts</a>
+                <a href="motivate.html" class="nav-item">M motivate</a>
+                <a href="alarm.html" class="nav-item">A alarm</a>
+                <a href="calendar.html" class="nav-item">C calendar</a>
+                <a href="flashcards.html" class="nav-item active">R cards</a>
+                <a href="settings.html" class="nav-item">P settings</a>
+            </nav>
+            <div class="user">
+                <span class="user-dot"></span>
+                <span class="user-text">active</span>
+            </div>
+        </div>
+        <main class="main">
+            <div class="top-bar">
+                <h1>flashcards</h1>
+                <div class="date">feb 14, 2025</div>
+            </div>
+            <div class="content">
+                <div class="card flashcard-card">
+                    <div class="flashcard">
+                        <div class="flashcard-content">
+                            <p class="card-question">What is the powerhouse of the cell?</p>
+                            <p class="card-answer-hint">click to reveal</p>
+                        </div>
+                    </div>
+                    <div class="flashcard-controls">
+                        <button class="btn btn-secondary">← previous</button>
+                        <button class="btn btn-primary">flip</button>
+                        <button class="btn btn-secondary">next →</button>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">24</span>
+                        <span class="stat-label">total cards</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">reviewed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">mastered</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">remaining</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>courses</h2>
+                    <div class="course-tabs">
+                        <button class="course-tab active">math</button>
+                        <button class="course-tab">science</button>
+                        <button class="course-tab">history</button>
+                        <button class="course-tab">programming</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>upcoming assessments</h2>
+                    <div class="assessment-list">
+                        <div class="assessment-item">
+                            <span>calculus quiz</span>
+                            <span class="due-date">tomorrow</span>
+                        </div>
+                        <div class="assessment-item">
+                            <span>physics midterm</span>
+                            <span class="due-date">feb 22</span>
+                        </div>
+                        <div class="assessment-item">
+                            <span>world war 2 essay</span>
+                            <span class="due-date">feb 28</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>progress</h2>
+                    <div class="progress-list">
+                        <div class="progress-item">
+                            <span>math</span>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-item">
+                            <span>science</span>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 60%"></div></div>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-item">
+                            <span>history</span>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 40%"></div></div>
+                            <span>40%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

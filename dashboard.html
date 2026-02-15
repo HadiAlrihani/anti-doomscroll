@@ -8,13 +8,36 @@
 </head>
 <body>
     <div class="app">
+        <!-- sidebar navigation -->
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">D</div>
+                <div class="logo-text">doomscroll doctor</div>
+            </div>
+            <nav class="nav">
+                <a href="dashboard.html" class="nav-item active">D dashboard</a>
+                <a href="focus.html" class="nav-item">F focus</a>
+                <a href="funfacts.html" class="nav-item">U facts</a>
+                <a href="motivate.html" class="nav-item">M motivate</a>
+                <a href="alarm.html" class="nav-item">A alarm</a>
+                <a href="calendar.html" class="nav-item">C calendar</a>
+                <a href="flashcards.html" class="nav-item">R cards</a>
+                <a href="settings.html" class="nav-item">P settings</a>
+            </nav>
+            <div class="user">
+                <span class="user-dot"></span>
+                <span class="user-text">active</span>
+            </div>
+        </div>
+
         <main class="main">
             <div class="top-bar">
                 <h1>dashboard</h1>
-                <div class="date" id="currentDate">feb 14, 2025</div>
+                <div class="date">feb 14, 2025</div>
             </div>
 
             <div class="content">
+                <!-- current session card -->
                 <div class="card">
                     <div class="card-header">
                         <h2>current session</h2>
@@ -36,6 +59,7 @@
                     </div>
                 </div>
 
+                <!-- stats grid -->
                 <div class="stats-grid">
                     <div class="stat-card">
                         <span class="stat-number">8</span>
@@ -55,7 +79,48 @@
                     </div>
                 </div>
 
+                <!-- feature previews -->
+                <div class="feature-previews">
+                    <div class="preview-header">
+                        <h2>quick access</h2>
+                    </div>
+                    <div class="preview-grid">
+                        <a href="funfacts.html" class="preview-card">
+                            <span class="preview-icon">U</span>
+                            <span class="preview-title">fun facts</span>
+                            <span class="preview-count">12 new</span>
+                        </a>
+                        <a href="motivate.html" class="preview-card">
+                            <span class="preview-icon">M</span>
+                            <span class="preview-title">motivation</span>
+                            <span class="preview-count">3 videos</span>
+                        </a>
+                        <a href="alarm.html" class="preview-card">
+                            <span class="preview-icon">A</span>
+                            <span class="preview-title">alarm</span>
+                            <span class="preview-count">1 active</span>
+                        </a>
+                        <a href="calendar.html" class="preview-card">
+                            <span class="preview-icon">C</span>
+                            <span class="preview-title">calendar</span>
+                            <span class="preview-count">4 events</span>
+                        </a>
+                        <a href="flashcards.html" class="preview-card">
+                            <span class="preview-icon">R</span>
+                            <span class="preview-title">flashcards</span>
+                            <span class="preview-count">24 cards</span>
+                        </a>
+                        <a href="focus.html" class="preview-card">
+                            <span class="preview-icon">F</span>
+                            <span class="preview-title">focus</span>
+                            <span class="preview-count">3 today</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- two columns -->
                 <div class="columns">
+                    <!-- recent activity -->
                     <div class="col">
                         <div class="card">
                             <h2>recent activity</h2>
@@ -74,31 +139,36 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- today's fun fact -->
+                        <div class="card">
+                            <h2>today's fun fact</h2>
+                            <p class="fact-teaser">Honey never spoils. Archaeologists found 3000-year-old honey in Egyptian tombs...</p>
+                            <a href="funfacts.html" class="preview-link">more facts</a>
+                        </div>
                     </div>
 
+                    <!-- right column -->
                     <div class="col">
                         <div class="card">
-                            <h2>quick actions</h2>
-                            <div class="quick-grid">
-                                <button class="quick-btn">
-                                    <span>G</span>
-                                    <span>game</span>
-                                </button>
-                                <button class="quick-btn">
-                                    <span>C</span>
-                                    <span>cards</span>
-                                </button>
-                                <button class="quick-btn">
-                                    <span>V</span>
-                                    <span>video</span>
-                                </button>
-                                <button class="quick-btn">
-                                    <span>P</span>
-                                    <span>plan</span>
-                                </button>
+                            <h2>upcoming</h2>
+                            <div class="upcoming-list">
+                                <div class="upcoming-item">
+                                    <span>alarm</span>
+                                    <span>14:30</span>
+                                </div>
+                                <div class="upcoming-item">
+                                    <span>calendar</span>
+                                    <span>team meeting</span>
+                                </div>
+                                <div class="upcoming-item">
+                                    <span>flashcards</span>
+                                    <span>math quiz</span>
+                                </div>
                             </div>
                         </div>
 
+                        <!-- watchlist -->
                         <div class="card">
                             <h2>watchlist</h2>
                             <div class="watchlist">
@@ -115,6 +185,13 @@
                                     <span class="watch-dot">○</span>
                                 </div>
                             </div>
+                        </div>
+
+                        <!-- daily motivation -->
+                        <div class="card">
+                            <h2>daily motivation</h2>
+                            <p class="quote">"The secret of getting ahead is getting started."</p>
+                            <a href="motivate.html" class="preview-link">more videos</a>
                         </div>
                     </div>
                 </div>

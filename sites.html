@@ -8,69 +8,65 @@
 </head>
 <body>
     <div class="app">
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">D</div>
+                <div class="logo-text">doomscroll doctor</div>
+            </div>
+            <nav class="nav">
+                <a href="dashboard.html" class="nav-item">D dashboard</a>
+                <a href="focus.html" class="nav-item">F focus</a>
+                <a href="sites.html" class="nav-item active">S sites</a>
+                <a href="stats.html" class="nav-item">T stats</a>
+                <a href="settings.html" class="nav-item">P settings</a>
+            </nav>
+            <div class="user">
+                <span class="user-dot"></span>
+                <span class="user-text">active</span>
+            </div>
+        </div>
         <main class="main">
             <div class="top-bar">
                 <h1>sites</h1>
                 <div class="date">feb 14, 2025</div>
             </div>
-
             <div class="content">
-                <div class="card">
-                    <h2>add to watchlist</h2>
-                    <div class="add-site">
-                        <input type="text" class="site-input" placeholder="enter domain...">
-                        <button class="btn btn-primary">add</button>
-                    </div>
+                <div class="stats-grid">
+                    <div class="stat-card"><span class="stat-number">8</span><span class="stat-label">unique sites</span></div>
+                    <div class="stat-card"><span class="stat-number">47m</span><span class="stat-label">total time</span></div>
+                    <div class="stat-card"><span class="stat-number">12</span><span class="stat-label">visits</span></div>
+                    <div class="stat-card"><span class="stat-number">3</span><span class="stat-label">breaks</span></div>
                 </div>
-
                 <div class="card">
                     <div class="card-header">
-                        <h2>tracked sites</h2>
-                        <span class="badge">4</span>
+                        <h2>today's sites</h2>
+                        <span class="badge">8 sites</span>
                     </div>
                     <div class="site-list">
                         <div class="site-item">
-                            <span>youtube.com</span>
-                            <div>
-                                <span class="site-time">2h 15m</span>
-                                <button class="btn-small">remove</button>
-                            </div>
+                            <div><span class="site-domain">youtube.com</span><span class="site-path">/watch</span></div>
+                            <div><span class="site-time">2h 15m</span><span class="site-visits">4 visits</span></div>
                         </div>
                         <div class="site-item">
-                            <span>reddit.com</span>
-                            <div>
-                                <span class="site-time">1h 47m</span>
-                                <button class="btn-small">remove</button>
-                            </div>
+                            <div><span class="site-domain">reddit.com</span><span class="site-path">/r/all</span></div>
+                            <div><span class="site-time">1h 47m</span><span class="site-visits">3 visits</span></div>
                         </div>
                         <div class="site-item">
-                            <span>twitter.com</span>
-                            <div>
-                                <span class="site-time">58m</span>
-                                <button class="btn-small">remove</button>
-                            </div>
+                            <div><span class="site-domain">twitter.com</span><span class="site-path">/home</span></div>
+                            <div><span class="site-time">58m</span><span class="site-visits">2 visits</span></div>
                         </div>
                         <div class="site-item">
-                            <span>twitch.tv</span>
-                            <div>
-                                <span class="site-time">42m</span>
-                                <button class="btn-small">remove</button>
-                            </div>
+                            <div><span class="site-domain">github.com</span><span class="site-path">/dashboard</span></div>
+                            <div><span class="site-time">34m</span><span class="site-visits">1 visit</span></div>
                         </div>
                     </div>
                 </div>
-
                 <div class="card">
-                    <h2>suggestions</h2>
-                    <div class="suggestion-list">
-                        <div class="suggestion-item">
-                            <span>facebook.com</span>
-                            <button class="btn-small">add</button>
-                        </div>
-                        <div class="suggestion-item">
-                            <span>instagram.com</span>
-                            <button class="btn-small">add</button>
-                        </div>
+                    <h2>this week</h2>
+                    <div class="top-sites">
+                        <div class="top-item"><span>youtube.com</span><span class="value">8h 24m</span></div>
+                        <div class="top-item"><span>reddit.com</span><span class="value">5h 15m</span></div>
+                        <div class="top-item"><span>twitter.com</span><span class="value">3h 47m</span></div>
                     </div>
                 </div>
             </div>
